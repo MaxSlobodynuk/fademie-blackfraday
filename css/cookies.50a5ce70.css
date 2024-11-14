@@ -1,0 +1,310 @@
+@font-face {
+  font-display: swap;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Lora-Regular.771a35cb.woff2) format("woff2"),
+    url(../fonts/Lora-Regular.814f548a.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Lora-Bold.af5e31d2.woff2) format("woff2"),
+    url(../fonts/Lora-Bold.1098b492.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Montserrat-Bold.dbf9cc3b.woff2) format("woff2"),
+    url(../fonts/Montserrat-Bold.0329bf8f.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/Montserrat-Italic.16bc8d65.woff2) format("woff2"),
+    url(../fonts/Montserrat-Italic.3c654aa7.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/Montserrat-BoldItalic.ac729c1b.woff2) format("woff2"),
+    url(../fonts/Montserrat-BoldItalic.b547006c.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Montserrat-Regular.518803d3.woff2) format("woff2"),
+    url(../fonts/Montserrat-Regular.498c8cdb.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Montserrat-SemiBold.53b31a44.woff2) format("woff2"),
+    url(../fonts/Montserrat-SemiBold.fa5f925d.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Montserrat-Medium.c416eeae.woff2) format("woff2"),
+    url(../fonts/Montserrat-Medium.1415d3ef.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/Montserrat-Thin.65c2dcc8.woff2) format("woff2"),
+    url(../fonts/Montserrat-Thin.a777590c.woff) format("woff");
+}
+.cookie-notice {
+  background: #f5f5f5;
+  border-radius: 0.75rem;
+  bottom: var(--banner-height, 16px);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+  color: #2a2a2a;
+  font-family: Montserrat, sans-serif;
+  left: 50%;
+  opacity: 0;
+  padding: 1.5rem 7rem 1.75rem;
+  pointer-events: none;
+  position: fixed;
+  transform: translateY(110%);
+  z-index: 9999999;
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-notice {
+    left: 1.5rem;
+    padding: 1.5rem 2.875rem 1.75rem;
+    right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cookie-notice {
+    padding: 1.5rem 1rem 1.75rem;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .cookie-notice {
+    bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cookie-notice {
+    max-width: 74.0625rem;
+    width: 100%;
+  }
+}
+.cookie-notice .small-box {
+  display: flex;
+  gap: 4rem;
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-notice .small-box {
+    display: block;
+  }
+}
+.cookie-notice .cookie-btn-box {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-notice .cookie-btn-box {
+    align-items: baseline;
+    display: flex;
+    gap: 2rem;
+  }
+}
+.cookie-notice .cookie-btn {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-notice .cookie-btn {
+    margin: 0;
+  }
+}
+.cookie-notice.displayed {
+  opacity: 1;
+  pointer-events: unset;
+  transform: translateY(0) translateX(-50%);
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-notice.displayed {
+    transform: translateY(0) translateX(0);
+  }
+}
+.cookie-text-box {
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 1280px) {
+  .cookie-text-box {
+    margin-bottom: 1.25rem;
+  }
+}
+.cookie-svg-mob {
+  bottom: 0;
+  position: absolute;
+  right: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-svg-mob {
+    display: none;
+  }
+}
+.cookie-svg-desk {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-svg-desk {
+    bottom: 0;
+    display: block;
+    left: 0.75rem;
+    position: absolute;
+  }
+}
+.cookie-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin-top: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-text {
+    font-size: 0.875rem;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cookie-text {
+    text-align: unset;
+  }
+}
+.cookie-box {
+  align-items: flex-end;
+  display: flex;
+  position: static;
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-box {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cookie-box {
+    width: auto;
+  }
+}
+.cookie-link {
+  border-bottom: 1px solid #2a2a2a;
+  color: #2a2a2a;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-link {
+    font-size: 0.875rem;
+    line-height: 1.3;
+  }
+}
+.cookie-link:hover {
+  border-color: #fff;
+  color: #000;
+}
+.cookie-btn {
+  background: #2a2a2a;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0.875rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-btn {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cookie-btn {
+    font-size: 0.875rem;
+    padding: 0.875rem 2rem;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-btn:first-child {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cookie-btn:first-child {
+    margin-bottom: 1.25rem;
+  }
+}
+.cookie-btn:hover {
+  background: #000;
+}
+.cookie-btn:last-child {
+  background: inherit;
+  border-bottom: 1px solid #2a2a2a;
+  border-radius: 0;
+  color: #2a2a2a;
+  margin-bottom: 0;
+  padding: 0 0 1px;
+  width: auto;
+}
+.cookie-btn:last-child:hover {
+  border-color: #000;
+  color: #000;
+}
+.cookie-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .cookie-heading {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .cookie-heading {
+    margin-bottom: 0;
+    width: 16.8125rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .cookie-btn-box {
+    justify-content: center;
+    text-align: center;
+  }
+}
